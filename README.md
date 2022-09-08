@@ -1,24 +1,40 @@
 # rot-13
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Clone the repository
+  https://github.com/bhiseweb/rot-13.git
 
-Things you may want to cover:
+- Ruby Version
+  `3.0.3`
 
-* Ruby version
+- Rails Version
+  `7.0.3.1`
 
-* System dependencies
+- Run
+  `bundle install`
 
-* Configuration
+- To migrate run command
+  `rails db:migrate`
 
-* Database creation
+- To start application
+  `rails s`
 
-* Database initialization
+- Hit the api endpoint `http://localhost:3000/conversions` with json parameter
+  defined below
 
-* How to run the test suite
+  ```
+  {
+    "conversion":
+    {
+        "body": "i am leena"
+    }
+  }
 
-* Services (job queues, cache servers, search engines, etc.)
+  ```
+- The reponse will be something like below response
 
-* Deployment instructions
+  ```
+  Data has been created and Rot-13 version is v nz yrran
 
-* ...
+  ```
+
+
