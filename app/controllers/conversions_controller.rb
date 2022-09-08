@@ -2,10 +2,6 @@
 
 # app/controllers/conversions_controller.rb
 class ConversionsController < ApplicationController
-  def new
-    conversion = Conversion.new
-  end
-
   def create
     conversion = Conversion.new(conversion_params)
     if conversion.save
